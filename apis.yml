@@ -1,0 +1,30 @@
+aid: owlchart
+name: OwlChart
+description: 'OwlChart is a company surfaced via the API Evangelist harvest backlog (source: new-submission)
+  and added to the network as a stub for full-pipeline profiling.'
+url: https://raw.githubusercontent.com/api-evangelist/owlchart/refs/heads/main/apis.yml
+x-type: company
+x-source: harvest:new-submission
+x-tier: stub
+x-tier-reason: harvest
+specificationVersion: '0.20'
+created: '2026-10-02'
+modified: '2026-10-02'
+tags:
+- Company
+apis: []
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+- FN: APIs.json
+  email: info@apis.io
+common:
+- type: Website
+  url: https://owlchart.com
+- type: Documentation
+  url: https://owlchart.com/developers.html
+x-submission-notes: 'Market-data API: OHLCV candles for crypto/stocks/FX/commodities, symbol search, ETF
+  flows, pattern scanner.'
+x-submission-probe: root 200; developers.html 200; llms.txt 200; /api/v1/search?q=BTC 200 JSON; no OpenAPI
+  (404); 404 probe 404
+x-submitted-by: ecommerceservicesnetwork@gmail.com (apis.io/add, 2026-09-29)
