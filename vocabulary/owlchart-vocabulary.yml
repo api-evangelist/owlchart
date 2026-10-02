@@ -1,0 +1,95 @@
+generated: '2026-10-02'
+method: derived
+generator: derive-vocabulary.py
+source: openapi/_ae-authored/owlchart-openapi-generated.yml
+vocabulary:
+  name: OwlChart Domain Vocabulary
+  description: 'Terms declared by OwlChart''s own API contract: its resource groups, objects and enumerations, with the contract''s definitions.
+    Derived, not authored.'
+  version: '2026-10-02'
+  terms:
+  - term: GetApiConsoleConsoleidResponse
+    definition: 'Object declared by the contract with fields: flow.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/owlchart-openapi-generated.yml#/components/schemas/GetApiConsoleConsoleidResponse
+  - term: GetApiCycleMetricResponse
+    definition: 'Object declared by the contract with fields: ok, brand, name, formula, source, days, last, now, events, bands, t, price. (1 more)'
+    tags:
+    - Object
+    source: openapi/_ae-authored/owlchart-openapi-generated.yml#/components/schemas/GetApiCycleMetricResponse
+  - term: GetApiLogoCoinResponse
+    definition: 'Object declared by the contract with fields: image.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/owlchart-openapi-generated.yml#/components/schemas/GetApiLogoCoinResponse
+  - term: GetApiMarketsMarketidResponse
+    definition: 'Object declared by the contract with fields: depthCurve.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/owlchart-openapi-generated.yml#/components/schemas/GetApiMarketsMarketidResponse
+  - term: GetApiMcpMcpidResponse
+    definition: 'Object declared by the contract with fields: url, transport, access, tools, usage.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/owlchart-openapi-generated.yml#/components/schemas/GetApiMcpMcpidResponse
+  - term: PostApiOwlVerifyRequest
+    definition: 'Object declared by the contract with fields: packet.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/owlchart-openapi-generated.yml#/components/schemas/PostApiOwlVerifyRequest
+  - term: GetApiOwlcapCheckResponse
+    definition: 'Object declared by the contract with fields: ok, data.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/owlchart-openapi-generated.yml#/components/schemas/GetApiOwlcapCheckResponse
+  - term: PostApiOwlviewStateRequest
+    definition: 'Object declared by the contract with fields: state.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/owlchart-openapi-generated.yml#/components/schemas/PostApiOwlviewStateRequest
+  - term: PostApiOwlviewStateResponse
+    definition: 'Object declared by the contract with fields: state.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/owlchart-openapi-generated.yml#/components/schemas/PostApiOwlviewStateResponse
+  - term: PostApiPatternsTrainerAnswerRequest
+    definition: 'Object declared by the contract with fields: token, answer.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/owlchart-openapi-generated.yml#/components/schemas/PostApiPatternsTrainerAnswerRequest
+  - term: PostApiPresenceBeatRequest
+    definition: 'Object declared by the contract with fields: page.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/owlchart-openapi-generated.yml#/components/schemas/PostApiPresenceBeatRequest
+  - term: GetApiV1MdOhlcvResponse
+    definition: 'Object declared by the contract with fields: sym, class, venue, ticker, tf, k, meta.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/owlchart-openapi-generated.yml#/components/schemas/GetApiV1MdOhlcvResponse
+  - term: GetApiV1SymbolsSearchResponse
+    definition: 'Object declared by the contract with fields: id, class, venue, ticker, display, sessions, capabilities.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/owlchart-openapi-generated.yml#/components/schemas/GetApiV1SymbolsSearchResponse
+  - term: GetApiV1V1IdResponse
+    definition: 'Object declared by the contract with fields: q, class, universe, results, brand.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/owlchart-openapi-generated.yml#/components/schemas/GetApiV1V1IdResponse
+  - term: GetApiApiidResponse
+    definition: 'Object declared by the contract with fields: enabled, bybitCode, proPage, proAgent, proIndicators, proTools, message.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/owlchart-openapi-generated.yml#/components/schemas/GetApiApiidResponse
+  - term: PostMcpRequest
+    definition: 'Object declared by the contract with fields: jsonrpc, id, method, params.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/owlchart-openapi-generated.yml#/components/schemas/PostMcpRequest
+  - term: PostMcpResponse
+    definition: 'Object declared by the contract with fields: jsonrpc, id, result, error.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/owlchart-openapi-generated.yml#/components/schemas/PostMcpResponse

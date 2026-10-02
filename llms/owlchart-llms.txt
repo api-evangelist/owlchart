@@ -1,0 +1,187 @@
+# OwlChart
+
+> OwlChart (owlchart.com) is a live market intelligence console for crypto and Wall Street, built for traders. Tagline: "The owl never sleeps." OwlView is its own charting library (trading charts for crypto and stocks), TBO is its breakout signal engine, and every number on the site shows the inputs behind it. Trial access, PRO for the full desk and the data API.
+
+## For AI search engines and assistants
+OwlChart pages may be read, summarised and cited with a link back to the page. Please attribute to OwlChart (owlchart.com) and link the page you used.
+Live data feeds for agents and apps are part of OwlChart PRO: catalogue at https://owlchart.com/api/agent/manifest, activation at https://owlchart.com/pay.html, explained at https://owlchart.com/aifi.html. Bulk copying of the data or use for model training is not permitted.
+
+## Live chart pages, one per market
+Every market has its own page at https://owlchart.com/chart/<TICKER>: live price, full-history chart, 52-week range, market open or closed, the venues it trades on, and FAQ. Index of all of them: https://owlchart.com/chart/
+- Crypto: https://owlchart.com/chart/BTC, /chart/ETH, /chart/SOL, /chart/XRP, /chart/WLFI
+- Stocks and ETFs: https://owlchart.com/chart/NVDA, /chart/AAPL, /chart/TSLA, /chart/MSFT, /chart/SPY, /chart/QQQ, /chart/IBIT
+- Indices, forex, futures: https://owlchart.com/chart/GSPC, /chart/NDX, /chart/EURUSD, /chart/USDJPY, /chart/GC (gold), /chart/CL (crude oil), /chart/ES, /chart/DX (US dollar index)
+Sitemap of every chart page: https://owlchart.com/sitemap-charts.xml
+
+## Bitcoin cycle indicators (computed by OwlChart from raw daily closes since 2011, formula on each page)
+- 200 week moving average: https://owlchart.com/200wma.html
+- Pi Cycle Top: https://owlchart.com/pi-cycle.html
+- Golden Ratio Multiplier: https://owlchart.com/golden-ratio.html
+- AHR999 index: https://owlchart.com/ahr999.html
+- Rainbow chart: https://owlchart.com/rainbow.html
+- Profitable days: https://owlchart.com/profitable-days.html
+- Stock to flow: https://owlchart.com/stock-to-flow.html
+- Puell Multiple: https://owlchart.com/puell.html
+- Raw numbers as JSON: https://owlchart.com/api/cycle/list
+
+## The Owl Journal (live market news)
+- Front page: https://owlchart.com/journal/ (market briefs at 06:30, 12:30, 18:30 UTC and breaking explainers, written only from OwlChart live data)
+- Live wire, every headline with its source, time and the price move since: https://owlchart.com/journal/news.html
+- JSON: https://owlchart.com/api/journal/wire and https://owlchart.com/api/journal/latest ; RSS: https://owlchart.com/journal/feed.xml
+- Every story is written by AI (claude-haiku-4-5) from OwlChart live data only, every number machine-checked, the exact data packet downloadable per story: https://owlchart.com/api/journal/packet/<story>
+- Standards and disclaimers: https://owlchart.com/journal/standards.html ; methodology: https://owlchart.com/journal/methodology.html ; track record of the consensus calls each story was published with, scored after 72 hours: https://owlchart.com/journal/record.html ; corrections: https://owlchart.com/journal/corrections.html ; archive: https://owlchart.com/journal/archive.html
+
+## Key facts
+- Product: web trading analytics console, OwlView charting library, embeddable widgets
+- Markets: crypto (any pair on 34+ exchanges, perps and spot) plus US stocks, indexes, sectors and ETFs
+- Signals: TBO breakout chart, Owl Score 0 to 100, Owl Market Index, composite regime (Risk On / Risk Off)
+- Data pulled straight from exchanges, issuers and official sources (Bybit, Binance, OKX, Hyperliquid, US BLS, FRED, ETF issuers)
+- Languages: English, Spanish, Portuguese, French, German, Chinese
+- X / Twitter: @owlchart_com
+
+## Site
+- [About OwlChart, the Trading Analytics Console for Traders](https://owlchart.com/about.html): Who builds OwlChart, why every number shows its inputs, what the trial includes and what PRO unlocks. Crypto and Wall Street data, live, on one desk.
+- [Crypto Trading Terminal, Spot vs Perp Flow and OI](https://owlchart.com/console.html): OwlChart Console 2.0, a crypto trading terminal with spot versus perp taker flow, open interest, order book walls, ETF flows, options expiry and a base rate engine. Every number raw, with its source, age and formula.
+- [Market Coverage Scoreboard, Every Instrument Counted](https://owlchart.com/coverage.html): How many instruments and exchanges OwlChart covers per asset class, generated live from the symbol table, with every gap named rather than hidden.
+- [OwlChart, Live Crypto and Stock Market Charts and Data](https://owlchart.com/): Live crypto and stock market console: OwlView charts, TBO breakout signals, order books from 34 exchanges, ETF flows, funding, liquidations and Fed odds.
+- [OwlChart Glossary, Every Metric and Term Explained Simply](https://owlchart.com/legend.html): Every OwlChart metric explained in plain English: funding, open interest, liquidations, Owl Score, TBO, CVD, ETF flows and more.
+- [Morning Owl, Today's Market Brief for Crypto and Stocks](https://owlchart.com/morning.html): Today's morning market brief: regime, the Bitcoin and Ethereum setup, ETF flows, Fed odds, the data due today and the levels that matter. Trial access.
+- [Crypto News Live, Owl Wire Market News Feed](https://owlchart.com/news.html): Live crypto and market news feed, every headline classified for market impact by AI and tagged to the coins it moves.
+- [OwlChart PRO, Pay with USD1, the WLFI Payment Gateway](https://owlchart.com/pay.html): Activate OwlChart PRO and pay with USD1 through the WLFI gateway: the plans, what PRO unlocks, and the API token for your account or your agent.
+- [Owl Scores Live by Asset, Crypto Conviction 0 to 100](https://owlchart.com/score/): Live Owl Scores for Bitcoin, Ethereum, Solana, XRP, BNB, Cardano, Dogecoin and WLFI: a 0 to 100 conviction read with every component shown.
+
+## Charts
+- [OwlTrading, Pro Chart and Live Order Book on One Screen](https://owlchart.com/owltrading.html): OwlView pro chart with the live aggregated order book beside it: candles, indicators, drawing tools and whale walls for any coin on one screen.
+- [OwlView Lite, Embeddable Trading Chart Library for Any Website](https://owlchart.com/owlview-lite.html): OwlView Lite: a lightweight embeddable trading chart for your website, candles, volume and indicators in one script. Trial edition with OwlChart branding.
+- [OwlView, Trading Chart and Charting Library, Crypto and Stocks](https://owlchart.com/owlview.html): OwlView by OwlChart: advanced trading chart and charting library for crypto and stocks. Candles, 40+ indicators, drawing tools, TBO signals, phone ready.
+- [Supercharts, Live Crypto Charts with OI, Funding and CVD](https://owlchart.com/supercharts.html): Live crypto supercharts: price with open interest, funding, CVD, liquidations and long/short on the same chart, every input shown, for any coin.
+- [TBO Breakout Chart Live, Signals for BTC, ETH, SOL, XRP, WLFI](https://owlchart.com/tbo.html): TBO, the live breakout chart: long and short arrows, close and cover marks, overheat diamonds and a public forward record, for BTC, ETH, SOL, XRP and WLFI.
+- [Book Cloud, Live Order Book Indicator Across Every Exchange](https://owlchart.com/tboexchanges.html): Book Cloud: where the resting buy and sell orders sit across every exchange at once, drawn on the chart as a cloud, live for WLFI and any coin.
+- [Live Trading Terminal, Six Markets on One Screen](https://owlchart.com/terminal.html): Six live charts on one screen: BTC, ETH, S&P 500, gold, oil and the coin you choose, with regime, funding and news beside them.
+
+## Markets
+- [Binance Top Trader Long/Short Ratio Live, Accounts, Positions](https://owlchart.com/binance-top-trader.html): Live Binance top trader long/short ratio by accounts and by positions for BTC, ETH, SOL and more, with history, so you see where the biggest traders lean.
+- [Bitfinex Margin Longs vs Shorts Live, BTC Margin Positions](https://owlchart.com/bitfinex-margin.html): Live Bitfinex margin long and short positions for Bitcoin, the ratio between them and how it changed, straight from the exchange.
+- [Bitcoin Exchange Balance Live, BTC and ETH Exchange Reserves](https://owlchart.com/exchange-balance.html): Live Bitcoin and Ethereum balances held on exchanges, by venue and in total, with the change over time, so you see coins leaving or arriving.
+- [Crypto Margin Interest Rates Live, Borrow Rates by Exchange](https://owlchart.com/exchange-margin.html): Live margin borrow interest rates for BTC, ETH, USDT and more across exchanges, side by side, so you see the real cost of leverage.
+- [Exchange Transparency, Reserves, Volume and Open Interest](https://owlchart.com/exchange-transparency.html): Live exchange transparency table: proof of reserves, volume, open interest and leverage per crypto exchange, so you know who holds what.
+- [Top Decentralized Exchanges Ranked, Live DEX Volume](https://owlchart.com/exchanges-dex.html): Live ranking of decentralized exchanges by perp and spot volume: Hyperliquid, Uniswap, dYdX and more, with open interest and market share.
+- [Top Crypto Derivatives Exchanges Ranked, Live Open Interest](https://owlchart.com/exchanges.html): Live ranking of crypto derivatives exchanges by open interest and 24h volume: Binance, Bybit, OKX, Hyperliquid and more, with market share.
+- [Fear and Greed Index Live, Crypto and Stock Market](https://owlchart.com/fear-greed.html): Live Fear and Greed Index for crypto and for the US stock market, side by side, with history and the inputs behind today's number.
+- [Accumulated Funding Rates, Cumulative Perp Funding Paid](https://owlchart.com/funding-accumulated.html): Cumulative perpetual funding paid over 7, 30 and 90 days per coin, so you see who has been paying to hold the trade and for how long.
+- [Funding Rates by Exchange Live, Cross-Venue Perp Funding](https://owlchart.com/funding-exchange.html): Live perpetual funding rates per exchange for every major coin: Binance, Bybit, OKX, Hyperliquid and more side by side, with the spread between them.
+- [Funding Rate Heatmap Live, Perp Funding Across the Market](https://owlchart.com/funding-heatmap.html): Live funding rate heatmap: every coin and exchange coloured by funding, so crowded longs and crowded shorts show up at a glance.
+- [OI-Weighted Funding Rate Live, the True Cost of Carry](https://owlchart.com/funding-oi-weighted.html): Open interest weighted funding rate per coin, live, so the venues holding the most positions count the most. The real cost of carry, with history.
+- [Crypto Funding Rates Live, Perpetual Funding Across the Market](https://owlchart.com/funding.html): Live perpetual funding rates for Bitcoin, Ethereum and every major coin across exchanges, with history, heatmap and who is paying whom.
+- [Spot Inflow and Outflow History, 30 Days of Net Flows](https://owlchart.com/inflow-outflow-history.html): Thirty days of daily spot net buying and selling per coin, so you see whether money has been flowing in or out and when it turned.
+- [Crypto Spot Inflow and Outflow Live, Net Buying per Coin](https://owlchart.com/inflow-outflow.html): Live spot inflow and outflow per coin: net buying and selling across exchanges over 1h, 24h and 7d, so you see where the money is moving.
+- [Liquidation Heatmap Live, Where Crypto Liquidations Hit](https://owlchart.com/liquidation-heatmap.html): Live liquidation heatmap for Bitcoin, Ethereum and more: the price levels where leveraged positions get wiped, built from open interest and leverage data.
+- [Liquidation Map Live, Where Leverage Gets Wiped](https://owlchart.com/liquidation-map.html): Live liquidation map per coin: the leverage clusters above and below price that act as magnets, built from exchange open interest.
+- [Aggregated Crypto Liquidations Live, Longs and Shorts](https://owlchart.com/liquidations-aggregated.html): Live long and short liquidations aggregated across exchanges for every coin, over 1h, 4h, 12h and 24h, with the biggest single wipes.
+- [Liquidations by Exchange Live, Binance vs Bybit vs OKX](https://owlchart.com/liquidations-exchange.html): Live liquidations broken down by exchange: Binance, Bybit, OKX, Hyperliquid and more, longs against shorts, over 1h to 24h.
+- [Crypto Liquidations Live, Long and Short Liquidations](https://owlchart.com/liquidations.html): Live crypto liquidations: total longs and shorts wiped across exchanges, per coin and per venue, with a heatmap and map of where the next ones sit.
+- [Crypto Long/Short Ratio Live, Crowd Positioning by Coin](https://owlchart.com/longshort.html): Live long/short ratio per coin and per exchange, so you see which side the crowd is on and when it flips, with history.
+- [Market Hours Live, the world clock with a liquidity map](https://owlchart.com/market-hours.html): Which stock exchanges are open right now (NYSE, Nasdaq, Shanghai, Euronext, Tokyo, Shenzhen, NSE India, Hong Kong, London, Toronto) in their own time zones, lunch breaks, next open, holiday runs, forex and CME hours, and the thin liquidity days in the next 14 days with the region that is thin. Every exchange row carries its own source and verification date.
+- [Crypto Market Data Live, Derivatives and Spot Analytics](https://owlchart.com/markets.html): Live crypto market data straight from the exchanges: open interest, funding, liquidations, long/short, volume and flows, every number sourced.
+- [Net Long vs Net Short Live, Crypto Positioning by Ratio](https://owlchart.com/net-long-short.html): Live net long against net short positioning per coin from account ratios across exchanges, so you see the imbalance and how it moved.
+- [Aggregated Open Interest Live, Total Crypto OI, All Exchanges](https://owlchart.com/oi-aggregated.html): Live total open interest per coin aggregated across every exchange, in coins and in dollars, with the 24h change and history.
+- [Open Interest by Exchange Live, Binance, Bybit, OKX and More](https://owlchart.com/oi-exchange.html): Live open interest per exchange for every major coin: Binance, Bybit, OKX, Hyperliquid and more side by side, with market share.
+- [Open Interest Heatmap Live, Crypto OI by Coin and Exchange](https://owlchart.com/oi-heatmap.html): Live open interest heatmap: every coin and exchange coloured by OI change, so leverage building or unwinding shows up at a glance.
+- [Open Interest History, Per-Contract OI Over Time](https://owlchart.com/oi-history.html): Open interest history per contract and exchange over 7, 30 and 90 days, against price, so you see leverage building before the move.
+- [Crypto Open Interest Live, Leverage Across the Market](https://owlchart.com/oi.html): Live crypto open interest across exchanges: total OI, per coin, per venue, heatmap and history, so you see how much leverage is in the market.
+- [OKX Top Trader Long/Short Ratio Live, Accounts and Positions](https://owlchart.com/okx-top-trader.html): Live OKX top trader long/short ratio by accounts and by positions for BTC, ETH and more, with history, so you see where the big OKX traders lean.
+- [Live Crypto Order Book, 34 Exchanges, Whale Walls and Tape](https://owlchart.com/orderbook.html): Live aggregated order book across 34 exchanges for any coin: whale bids and asks, walls appearing and pulling, executed whale trades and open interest.
+- [Crypto Liquidity Heatmap Live, BTC and ETH Liquidation Levels](https://owlchart.com/sessions-heatmap.html): Live liquidity heatmap for BTC, ETH and more: liquidation clusters above and below price, magnets, open interest, long/short and whale bid and ask tables.
+- [Trading Sessions Analysis, Asia vs Europe vs US Live](https://owlchart.com/sessions.html): Which session moves the market: live returns, volume and volatility for Asia, Europe and US hours per coin, with history.
+- [Top Trader Positions Live, Futures Long/Short Heatmap](https://owlchart.com/top-trader.html): Live top futures trader positions and accounts across Binance and OKX as a long/short heatmap per coin, with history.
+- [Crypto Volume Live, Spot and Perpetual Trading Volume](https://owlchart.com/volume.html): Live crypto trading volume: spot and perpetual volume per coin and per exchange over 24h, with market share and history.
+
+## Crypto
+- [AI Agent Tokens Radar, Live Owl Score for Virtuals Agents](https://owlchart.com/agents.html): Live radar for AI agent tokens on Virtuals and beyond: price, volume, Owl Score 0 to 100 and the inputs behind each score. Updated every minute.
+- [Crypto Bubbles Live, Crypto Market Bubble Chart by Performance](https://owlchart.com/bubbles-crypto.html): Live crypto bubbles: every coin sized by market cap and coloured by 1h, 24h, 7d or 30d change, so the winners and losers jump out in one look.
+- [Compare Crypto Assets Head to Head by Owl Score](https://owlchart.com/compare.html): Put two crypto assets side by side: Owl Score, price, funding, open interest, ETF flows and momentum, every input shown. Pick any pair, live.
+- [DeFi Data Live, TVL, Yields, Volume and Meme Coins](https://owlchart.com/defi.html): Live DeFi dashboard: total value locked by chain and protocol, yields, DEX volume and meme coin activity, pulled from the chains and shown with every input.
+- [Strategic ETH Reserve, Ethereum Treasury Holdings by Company](https://owlchart.com/eth-reserve.html): Live ranking of Ethereum treasury holdings by public company, DAO and foundation: ETH held, value, share of supply and how it changed.
+- [Flippening Monitor Live, ETH vs BTC and BTC vs Gold Market Cap](https://owlchart.com/flippening.html): Live flippening tracker: Ethereum vs Bitcoin, Bitcoin vs gold, silver and the largest stocks by market cap, with the gap and the trend.
+- [Top Crypto Gainers and Losers Today, Live 1h, 24h and 7d](https://owlchart.com/gainers.html): Live top crypto gainers and losers over 1h, 24h and 7d for spot and perpetuals, with volume and market cap, updated every minute.
+- [Crypto Gems Screener, Small-Cap Crypto Filter with Live Data](https://owlchart.com/gems.html): Find early small-cap crypto: filter by market cap, volume, age, exchange listings and momentum with live data, every rule shown.
+- [Crypto Heatmap Live, Market Cap, Price Change, Funding and OI](https://owlchart.com/heatmap.html): Live crypto heatmap by category: size by market cap, colour by price change, funding, RSI, open interest or volume, so the market reads in one look.
+- [HYPE Burn Tracker, Hyperliquid Token Burn and Annual Rate](https://owlchart.com/hype-burn.html): Live Hyperliquid HYPE burn tracker: tokens burned so far, daily burn history and the annual burn rate from trading fees.
+- [Meme Coin Calculator, the Reality Check with Live Numbers](https://owlchart.com/meme-calculator.html): Meme coin calculator: type a target price and see the market cap it needs, against every meme coin's live numbers, so the dream gets a reality check.
+- [Bitcoin Metric Live Chart and History](https://owlchart.com/metric.html): One Bitcoin on-chain or market metric as a live chart with its history and the formula behind it, on OwlChart.
+- [Bitcoin Metrics and Indicators, Live Catalog](https://owlchart.com/metrics.html): Catalog of Bitcoin metrics and cycle indicators, each as a live chart with the formula shown: MVRV, Puell, Pi Cycle, rainbow, dominance and more.
+- [Crypto Calendar, Bitcoin Monthly Returns Since 2011](https://owlchart.com/owl-calendar.html): Bitcoin seasonality: monthly and quarterly returns for every year since 2011, the average month and a forward projection built from the history.
+- [Owl Market Index Live, Crypto Market Score 0 to 100](https://owlchart.com/owl-index.html): Live Owl Market Index: one 0 to 100 score for the whole crypto market from regime, flows, funding, leverage and breadth, every input shown.
+- [Bitcoin Cycle Top Indicators, 30+ Live Peak Signals](https://owlchart.com/peak-indicators.html): Is Bitcoin near a cycle top? Thirty plus live peak indicators such as Pi Cycle, MVRV, Puell and the 2-year MA, each with its trigger level and the maths shown.
+- [Bitcoin Treasuries Live, Corporate BTC Holdings Ranking](https://owlchart.com/treasuries.html): Live ranking of Bitcoin treasuries: every public company, fund and government holding BTC, coins held, value, share of supply and history.
+- [Bitcoin Treasury Company, Holdings History and Buy Log](https://owlchart.com/treasury.html): One Bitcoin treasury company in detail: BTC holdings history, every purchase logged, and the stock price against Bitcoin.
+
+## Coins
+- [Bitcoin Price Live, BTC Chart, Every Market and Where to Buy](https://owlchart.com/btc.html): Bitcoin ($BTC) live price and OwlView chart, every exchange it trades on, supply, network stats and how to buy it. Data pulled straight from the venues.
+- [CARV Price Live, CARV Chart, Markets and Where to Buy](https://owlchart.com/carv.html): CARV ($CARV) live price and TBO breakout chart, every exchange it trades on with volume, and how to buy it. AI Beings token data pulled from the venues.
+- [Foxy Coin Price Live, FOXY Chart and Where to Buy](https://owlchart.com/foxy.html): Foxy ($FOXY) live price and chart, the Linea meme coin, every exchange it trades on with volume, and how to buy it.
+- [Pepe Coin Price Live, PEPE Chart and Where to Buy](https://owlchart.com/pepe.html): Pepe ($PEPE) live price and chart, every exchange it trades on with volume, supply, holders and how to buy the original meme frog.
+- [WLFI Live, World Liberty Financial Price and Analytics](https://owlchart.com/wlfi.html): WLFI World Hub: live World Liberty Financial price, chart, USD1 stablecoin data, exchanges, holders, order book and the whole ecosystem.
+- [OwlNet, the universal data network by OwlChart](https://owlchart.com/owl/): One signed packet per symbol carrying the mid, the band, real order book depth at 0.5, 1 and 2 percent both sides, the venue count, the age of the oldest reading, a signed refusal when the venues disagree, and a receipt anyone can re-run byte for byte. One poster per chain and every symbol lights up on it, one form per coin. Also $OWL, the unit usage is measured in (0.05 USD), released as a reward with no value, 100 billion supply, one holder vote on transferability once the supply is out.
+- [The OwlNet packet, rebuild any number yourself](https://owlchart.com/owl/packet.html): A live signed packet with the mid, the band, real resting depth at 0.5, 1 and 2 percent of the mid on both sides with the venue coverage printed beside each figure, the venue count, the age of the oldest reading, and a signed refusal when the venues disagree or the books are too old. Paste any packet into the page and your own browser re-runs the same program on the readings that came with it and says match or mismatch. Nothing is sent anywhere.
+- [Network Policies, the OwlNet rules and $OWL](https://owlchart.com/network-policies.html): usage measured in $OWL, the reward, the 100 billion supply, the one-year holder vote, the Owl agent, reader node integrity, the listing door, monthly reporting, the legal gate.
+- [Terms of Use](https://owlchart.com/policies.html): the OwlChart terms, with Privacy Policy, Cookies Policy, House Rules, Disclaimer and Data Policy linked from it.
+- [X Empire Price Live, $X Chart, Market Cap and Markets](https://owlchart.com/x-empire.html): X Empire ($X) live price, chart, market cap, the 100% scarcity supply and every market it trades on, with the live TBO chart.
+
+## ETFs
+- [Bitcoin ETF Flows Live, Daily Spot BTC ETF Net Flows](https://owlchart.com/etf-btc.html): Live daily Bitcoin spot ETF net flows and cumulative holdings for IBIT, FBTC, GBTC and every US fund, so you see when institutions buy or sell.
+- [Crypto ETF Flows Live, Spot ETF Net Flows Across the Market](https://owlchart.com/etf-crypto.html): Live spot ETF net flows for Bitcoin, Ethereum, Solana, XRP and Hyperliquid funds in one view, with daily history and cumulative totals.
+- [Ethereum ETF Flows Live, Spot ETH ETF Holdings and AUM](https://owlchart.com/etf-eth.html): Live Ethereum spot ETF overview: every fund, assets under management, estimated ETH held and daily net flows, updated from the issuers.
+- [Hong Kong Bitcoin and Ethereum ETFs Live, Flows and Holdings](https://owlchart.com/etf-hongkong.html): Live Hong Kong spot Bitcoin and Ethereum ETF flows, holdings and net assets by fund, the Asian side of institutional crypto demand.
+- [Hyperliquid ETFs Live, HYPE Spot ETF Holdings and AUM](https://owlchart.com/etf-hype.html): Live overview of Hyperliquid spot ETFs: every fund, assets under management, estimated HYPE held and daily flows.
+- [Solana ETF Flows Live, Spot SOL ETF Holdings and AUM](https://owlchart.com/etf-sol.html): Live Solana spot ETF overview: every fund, assets under management, estimated SOL held and daily net flows.
+- [WLFI ETF Watch, Is There a World Liberty Financial ETF?](https://owlchart.com/etf-wlfi.html): Is there a WLFI ETF? Live watch on World Liberty Financial ETF filings, plus the live $WLFI market while you wait: price, volume and exchanges.
+- [XRP ETF Flows Live, Spot XRP ETF Holdings and AUM](https://owlchart.com/etf-xrp.html): Live XRP spot ETF overview: every fund, assets under management, estimated XRP held and daily net flows.
+- [Candlestick and Chart Patterns, Live Scanner](https://owlchart.com/pattern.html): 58 candlestick and chart patterns drawn by code and explained in plain English, with a live scanner that finds 44 of them on any coin or stock.
+- [Crypto Regulation Tracker Live: SEC, CFTC, MiCA, UK Rules](https://owlchart.com/clarity.html): Every crypto rule, order and enforcement action from the SEC, CFTC, ESMA, EBA, FCA, HM Treasury and the Bank of England, read live from the regulators, with a plain sign of what each means for the market.
+- [Spot ETF Flows Live, Bitcoin and Ethereum Institutional Demand](https://owlchart.com/etf.html): Live Bitcoin and Ethereum spot ETF flows: today's net buying or selling, cumulative holdings and the BlackRock IBIT and ETHA lines, updated daily.
+- [GBTC Holders, Grayscale Bitcoin Trust Institutional Investors](https://owlchart.com/gbtc.html): Who holds GBTC: institutional investors in the Grayscale Bitcoin Trust from 13F filings, shares held, value and the change each quarter.
+- [Grayscale Fund Live, Price vs NAV and Premium History](https://owlchart.com/grayscale-fund.html): Live detail for one Grayscale fund: market price against estimated NAV, the premium or discount, holdings and the premium history.
+- [Grayscale Funds Live, GBTC NAV, Premium and Holdings](https://owlchart.com/grayscale.html): Live Grayscale dashboard: GBTC and every Grayscale trust with NAV, premium or discount, holdings and the daily change.
+
+## Stocks
+- [Stock Market Bubbles Live, US Stocks Map by Performance](https://owlchart.com/bubbles-stocks.html): Live stock market bubbles for US stocks: sized by market cap, coloured by the daily move, filtered by sector, so the whole board reads in one look.
+- [Crypto Stocks Live, Exchanges, Miners and Treasury Companies](https://owlchart.com/crypto-equities.html): Live prices for the listed companies that live on crypto: exchanges, miners, treasury companies, ETF issuers and stablecoin firms, with their crypto exposure.
+- [US Economic Calendar Live, CPI, FOMC, NFP, Earnings and IPOs](https://owlchart.com/economic-calendar.html): Live US economic calendar from the official sources: CPI, FOMC, jobs report, GDP, earnings, IPOs and market holidays, with the time left to each release.
+- [Tickers Search: Every Crypto, Stock and ETF Market Live](https://owlchart.com/tickers.html): One search box for 31,000 tickers: crypto spot and perps on every major exchange, on-chain DEX coins, stocks, ETFs, forex and indices, each with its logo, venue and live price, ready to chart.
+- [FOMC Live Today: Fed Rate Decision and Warsh Press Conference](https://owlchart.com/fedmeeting.html): Fed decision day, 16 September 2026: the statement at 14:00 ET, Kevin Warsh at 14:30 ET, streamed live with rate odds, BTC and stocks reacting on the same page.
+- [Stock ETFs Live, Prices for the Funds That Move the Market](https://owlchart.com/stock-etfs.html): Live prices for the ETFs that move the market: broad index, sector, bond, commodity, leveraged and crypto funds, with daily change and volume.
+- [Stock Sectors Live, the 11 S&P 500 Sectors and Rotation](https://owlchart.com/stock-sectors.html): The eleven S&P 500 sectors live: today, 1 week, 1 month, 3 and 6 months, so you see where the money is rotating.
+- [24-Hour Stock Trading, Which US Stocks Trade Around the Clock](https://owlchart.com/stock24h.html): Which US stocks trade 24 hours, who filed for overnight trading, the SEC roundtable and the venues, with live overnight prices.
+- [Stock Market Data Live, US Indexes, Sectors and Earnings](https://owlchart.com/stocks.html): The whole US stock market on one screen: live indexes, the big board, sectors, gainers and losers, earnings and the economic calendar.
+
+## Whales
+- [Hyperliquid Wallet Analysis, Top Leaderboard Wallets Live](https://owlchart.com/hyperliquid-wallets.html): Live analysis of the top Hyperliquid wallets: positions, PnL, leverage and bias for the leaderboard accounts, updated from the chain.
+- [Hyperliquid Whale Tracker Live, Positions and Liquidations](https://owlchart.com/hyperliquid-whales.html): Live Hyperliquid whale tracker: the largest open positions, long or short bias, entry, liquidation price and risk, pulled from the chain.
+- [Whale vs Retail Live, Who Is More Bullish Right Now](https://owlchart.com/whale-retail.html): Live whale against retail positioning delta per coin: which group is more bullish, how wide the gap is and when it last flipped.
+- [Whale Unveil, Live Hyperliquid Whale Tracker](https://owlchart.com/whales.html): Whale Unveil: live Hyperliquid whale positions, entries, liquidation prices and bias, pulled from the chain and refreshed every few seconds.
+
+## Owl Scores
+- [Cardano (ADA) Owl Score Live, 0 to 100 Conviction](https://owlchart.com/score/ada.html): Live Owl Score for Cardano: a 0 to 100 conviction read built from trend, flows, funding, leverage and momentum, every component shown. Trial access.
+- [BNB Owl Score Live, 0 to 100 Conviction](https://owlchart.com/score/bnb.html): Live Owl Score for BNB: a 0 to 100 conviction read built from trend, flows, funding, leverage and momentum, every component shown. Trial access.
+- [Bitcoin (BTC) Owl Score Live, 0 to 100 Conviction](https://owlchart.com/score/btc.html): Live Owl Score for Bitcoin: a 0 to 100 conviction read built from trend, flows, funding, leverage and momentum, every component shown. Trial access.
+- [Dogecoin (DOGE) Owl Score Live, 0 to 100 Conviction](https://owlchart.com/score/doge.html): Live Owl Score for Dogecoin: a 0 to 100 conviction read built from trend, flows, funding, leverage and momentum, every component shown. Trial access.
+- [Ethereum (ETH) Owl Score Live, 0 to 100 Conviction](https://owlchart.com/score/eth.html): Live Owl Score for Ethereum: a 0 to 100 conviction read built from trend, flows, funding, leverage and momentum, every component shown. Trial access.
+- [Solana (SOL) Owl Score Live, 0 to 100 Conviction](https://owlchart.com/score/sol.html): Live Owl Score for Solana: a 0 to 100 conviction read built from trend, flows, funding, leverage and momentum, every component shown. Trial access.
+- [WLFI Owl Score Live, 0 to 100 Conviction](https://owlchart.com/score/wlfi.html): Live Owl Score for WLFI: a 0 to 100 conviction read built from trend, flows, funding, leverage and momentum, every component shown. Trial access.
+- [XRP Owl Score Live, 0 to 100 Conviction](https://owlchart.com/score/xrp.html): Live Owl Score for XRP: a 0 to 100 conviction read built from trend, flows, funding, leverage and momentum, every component shown. Trial access.
+
+## Developers
+- [AiFi, OwlChart Market Data for AI Agents, API and Payment](https://owlchart.com/aifi.html): Market data your AI agent can read, verify and pay for: the feed catalogue, PRO access with a token and USD1 payment. Built for autonomous trading agents.
+- [OwlChart API for Developers, Live Market Data Endpoints](https://owlchart.com/developers.html): OwlChart developer hub: every live market data endpoint with request and response examples, TBO core, the OwlView library and trial access with a token.
+- [Live Composite Regime Widget, Risk On or Risk Off](https://owlchart.com/widget-regime.html): Embeddable live composite regime widget: BTC, ETH, S&P 500 and oil against their 50-day averages, Risk On or Risk Off.
+- [WLFI API for Developers, Live WLFI and USD1 Data](https://owlchart.com/wlfi-api.html): WLFI API: live World Liberty Financial and USD1 price, volume, holders and markets as JSON endpoints, with examples for developers and agents.
+
+## Legal
+OwlChart provides market data, analytics and probability estimates for information and education only. Nothing on the site is investment advice or a signal to buy or sell any asset.
+
+## AI connector (MCP)
+- [OwlChart MCP server](https://owlchart.com/connectors.html): add https://owlchart.com/mcp as a connector in Claude, ChatGPT, Gemini, Grok, Perplexity, Le Chat (Mistral), Microsoft Copilot Studio, DeepSeek (DeepSeek Harness), Claude Code, Codex CLI, Gemini CLI, Cursor, Windsurf, Cline, Zed, Kiro or any MCP client to query live prices, liquidity magnets, open interest across 13 exchanges, order book walls, funding, liquidations, ETF flows, chart patterns, tokenization and crypto regulation.
+- [OwlChart connector extras](https://owlchart.com/connectors.html#new): show_chart puts a live chart inside the AI chat (MCP Apps); create_alert / check_alerts set alerts on open interest, liquidity magnets, funding, ETF verdict flips and price, delivered to the chat or a webhook; get_watchlist / add_to_watchlist per member; get_money_flows (stablecoin mints and burns, ETF money, BlackRock bitcoin, open interest change); get_track_record.
+- [OwlChart track record](https://owlchart.com/track-record.html): forward-tested public record of the liquidity pull model, overall and per coin.
+- [OwlChart vs TradingView AI connector](https://owlchart.com/owlchart-vs-tradingview-ai.html): feature comparison of the two MCP connectors (30-09-2026).

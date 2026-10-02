@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/owlchart/main/json-schema/owlchart-get-api-v1-symbols-search-response-schema.json",
+  "title": "GetApiV1SymbolsSearchResponse",
+  "x-generated": "2026-10-02",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/owlchart-openapi-generated.yml#/components/schemas/GetApiV1SymbolsSearchResponse",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "class": {
+      "type": "string"
+    },
+    "venue": {
+      "type": "string"
+    },
+    "ticker": {
+      "type": "string"
+    },
+    "display": {
+      "type": "string"
+    },
+    "sessions": {
+      "type": "string"
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

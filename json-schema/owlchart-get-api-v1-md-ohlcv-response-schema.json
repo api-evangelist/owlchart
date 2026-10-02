@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/owlchart/main/json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json",
+  "title": "GetApiV1MdOhlcvResponse",
+  "x-generated": "2026-10-02",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/owlchart-openapi-generated.yml#/components/schemas/GetApiV1MdOhlcvResponse",
+  "type": "object",
+  "properties": {
+    "sym": {
+      "type": "string"
+    },
+    "class": {
+      "type": "string"
+    },
+    "venue": {
+      "type": "string"
+    },
+    "ticker": {
+      "type": "string"
+    },
+    "tf": {
+      "type": "string"
+    },
+    "k": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "integer"
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "price": {
+          "type": "number"
+        },
+        "chg24h": {
+          "type": "number"
+        },
+        "source": {
+          "type": "string"
+        },
+        "delay_ms": {
+          "type": "integer"
+        },
+        "sessions": {
+          "type": "string"
+        },
+        "capabilities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "tradingPeriod": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

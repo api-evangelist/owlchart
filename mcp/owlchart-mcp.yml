@@ -1,0 +1,7 @@
+generated: '2026-10-02'
+method: derived
+source: https://owlchart.com/api/agent/manifest
+deployment:
+  mode: none
+  auth: unknown
+  verified: derived

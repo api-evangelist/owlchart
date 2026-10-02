@@ -1,0 +1,1 @@
+{"resource":"https://owlchart.com/mcp","authorization_servers":["https://owlchart.com"],"bearer_methods_supported":["header"],"scopes_supported":["owlchart"],"resource_name":"OwlChart live market data","resource_documentation":"https://owlchart.com/connectors.html"}

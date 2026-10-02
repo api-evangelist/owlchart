@@ -1,30 +1,117 @@
 aid: owlchart
+
 name: OwlChart
-description: 'OwlChart is a company surfaced via the API Evangelist harvest backlog (source: new-submission)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://owlchart.com/images/og.png?v=3
+
+description: OwlChart provides live crypto and stock market charts, OHLCV candles, real‑time order‑book data, ETF flows, funding rates, liquidations,
+  market‑regime signals and AI‑driven analytics. Users can access symbol search, pattern scanning and a conversational ‘Ask the Owl’ assistant
+  without needing an account, with trial access to institutional‑grade data across 34 exchanges and major Wall Street indices.
+
 url: https://raw.githubusercontent.com/api-evangelist/owlchart/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:new-submission
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-02 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-02'
+
 modified: '2026-10-02'
+
 tags:
+- Finance
+- Crypto
+- Stock Market
+- Data API
+- Charts
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Spectral
+  url: rules/owlchart-rules.yml
+- type: JSONLD
+  url: json-ld/owlchart-context.jsonld
+- type: Vocabulary
+  url: vocabulary/owlchart-vocabulary.yml
+- type: DataModel
+  url: data-model/owlchart-data-model.yml
+- type: Conformance
+  url: conformance/owlchart-conformance.yml
+- type: LLMsTxt
+  url: llms/owlchart-llms.txt
+- type: WellKnown
+  url: well-known/owlchart-well-known.yml
+- type: Hosts
+  url: hosts/owlchart-hosts.yml
+- type: Vendors
+  url: vendors/owlchart-vendors.yml
+- type: PrivacyPolicy
+  url: https://owlchart.com/privacy.html
+- type: DomainSecurity
+  url: security/owlchart-domain-security.yml
 - type: Website
   url: https://owlchart.com
 - type: Documentation
   url: https://owlchart.com/developers.html
-x-submission-notes: 'Market-data API: OHLCV candles for crypto/stocks/FX/commodities, symbol search, ETF
-  flows, pattern scanner.'
-x-submission-probe: root 200; developers.html 200; llms.txt 200; /api/v1/search?q=BTC 200 JSON; no OpenAPI
-  (404); 404 probe 404
+- type: APIReference
+  url: https://owlchart.com/developers.html
+
+apis:
+- name: OwlChart Market Data API
+  description: Live market data API providing OHLCV candles, real‑time order‑book data, symbol search and analytics.
+  humanURL: https://owlchart.com/developers.html
+  aid: owlchart:owlchart-market-data-api
+- aid: owlchart:owlchart-api
+  name: OwlChart API
+  description: 'OwlChart API as documented publicly: 33 operations. Contract generated from the documentation by API Evangelist (2026-10-02);
+
+    not the provider''s own document.'
+  humanURL: https://owlchart.com/wlfi-api.html
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/owlchart-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+
+x-submission-notes: 'Market-data API: OHLCV candles for crypto/stocks/FX/commodities, symbol search, ETF flows, pattern scanner.'
+
+x-submission-probe: root 200; developers.html 200; llms.txt 200; /api/v1/search?q=BTC 200 JSON; no OpenAPI (404); 404 probe 404
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: The provider's documentation is HTML only and no OpenAPI/AsyncAPI/GraphQL spec was found.
+  evidence:
+  - url: https://owlchart.com/developers.html
+    status: 200
+  checked: '2026-10-02'
+
 x-submitted-by: ecommerceservicesnetwork@gmail.com (apis.io/add, 2026-09-29)
+x-enrichment:
+  date: '2026-10-02'
+  status: enriched
+  artifacts_added: 23
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
