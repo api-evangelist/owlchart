@@ -1,0 +1,108 @@
+openapi: 3.2.0
+info:
+  title: OwlChart MCP API
+  version: '2026-10-02'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-02: 33 operation(s) read from 2 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; OwlChart has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 12
+    documentation: 21
+    pages-with-code: 2
+    pages-read: 2
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-02'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://owlchart.com/wlfi-api.html
+  - https://owlchart.com/developers.html
+tags:
+- name: MCP
+paths:
+  /api/mcp/{mcpid}:
+    get:
+      operationId: get_api_mcp_mcpid
+      tags:
+      - MCP
+      summary: 'The public card of the connector: URL, transport, access, tool list and usage…'
+      x-source: https://owlchart.com/developers.html
+      parameters:
+      - name: mcpid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetApiMcpMcpidResponse'
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at mcpId
+  /mcp:
+    post:
+      operationId: post_mcp
+      tags:
+      - MCP
+      summary: A remote Model Context Protocol server (Streamable HTTP, JSON-RPC 2.0, JSON…
+      x-source: https://owlchart.com/developers.html
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostMcpRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostMcpResponse'
+      x-evidence:
+        kind: documentation
+components:
+  schemas:
+    PostMcpResponse:
+      type: object
+      properties:
+        jsonrpc:
+          type: string
+        id:
+          type: integer
+        result:
+          type: object
+        error:
+          type: object
+    PostMcpRequest:
+      type: object
+      properties:
+        jsonrpc:
+          type: string
+        id:
+          type: integer
+        method:
+          type: string
+        params:
+          type: object
+      required:
+      - jsonrpc
+      - id
+      - method
+    GetApiMcpMcpidResponse:
+      type: object
+      properties:
+        url:
+          type: string
+        transport:
+          type: string
+        access:
+          type: string
+        tools:
+          type: array
+        usage:
+          type: object

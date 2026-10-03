@@ -1,0 +1,47 @@
+openapi: 3.2.0
+info:
+  title: OwlChart Oi API
+  version: '2026-10-02'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-02: 33 operation(s) read from 2 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; OwlChart has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 12
+    documentation: 21
+    pages-with-code: 2
+    pages-read: 2
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-02'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://owlchart.com/wlfi-api.html
+  - https://owlchart.com/developers.html
+tags:
+- name: Oi
+paths:
+  /api/oi/{oiid}:
+    get:
+      operationId: get_api_oi_oiid
+      tags:
+      - Oi
+      summary: Daily open interest per venue in US dollars, each day at that day's own price
+      x-source: https://owlchart.com/developers.html
+      parameters:
+      - name: oiid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: sym
+        in: query
+        required: true
+        schema:
+          type: string
+        description: Base symbol, e.g. WLFI
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 3 example path(s) differing only at oiId

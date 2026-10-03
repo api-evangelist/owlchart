@@ -1,0 +1,176 @@
+openapi: 3.2.0
+info:
+  title: OwlChart API
+  version: '2026-10-02'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-02: 33 operation(s) read from 2 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; OwlChart has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 12
+    documentation: 21
+    pages-with-code: 2
+    pages-read: 2
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-02'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://owlchart.com/wlfi-api.html
+  - https://owlchart.com/developers.html
+tags:
+- name: OwlChart API
+paths:
+  /api/v1/{v1id}:
+    get:
+      operationId: get_api_v1_v1id
+      tags:
+      - OwlChart API
+      summary: The brand envelope, on every answer
+      x-source: https://owlchart.com/developers.html
+      parameters:
+      - name: v1id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: class
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: limit
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: q
+        in: query
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetApiV1V1IdResponse'
+      x-evidence:
+        kind: documentation
+        collapsed_from: 3 example path(s) differing only at v1Id
+  /api/v1/{v1id}/{symbol}:
+    get:
+      operationId: get_api_v1_v1id_symbol
+      tags:
+      - OwlChart API
+      summary: How much money is resting around the price, added up across every exchange
+      x-source: https://owlchart.com/developers.html
+      parameters:
+      - name: v1id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: symbol
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 5 example path(s) differing only at v1Id
+  /api/{apiid}:
+    get:
+      operationId: get_api_apiid
+      tags:
+      - OwlChart API
+      summary: /api/config carries the owlview block the engine reads
+      x-source: https://owlchart.com/developers.html
+      parameters:
+      - name: apiid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: q
+        in: query
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetApiApiidResponse'
+      x-evidence:
+        kind: documentation
+        collapsed_from: 5 example path(s) differing only at apiId
+components:
+  schemas:
+    GetApiApiidResponse:
+      type: object
+      properties:
+        enabled:
+          type: boolean
+        bybitCode:
+          type: string
+        proPage:
+          type: string
+        proAgent:
+          type: string
+        proIndicators:
+          type: array
+        proTools:
+          type: array
+        message:
+          type: string
+    GetApiV1V1IdResponse:
+      type: object
+      properties:
+        q:
+          type: string
+        class:
+          type: string
+        universe:
+          type: object
+          properties:
+            instruments:
+              type: integer
+            builtAt:
+              type: string
+              format: date-time
+        results:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+              class:
+                type: string
+              venue:
+                type: string
+              ticker:
+                type: string
+              name:
+                type: string
+              quote:
+                type: string
+        brand:
+          type: object
+          properties:
+            name:
+              type: string
+            product:
+              type: string
+            logo:
+              type: string
+            watermark:
+              type: string
+            attribution:
+              type: string

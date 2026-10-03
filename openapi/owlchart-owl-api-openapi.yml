@@ -1,0 +1,74 @@
+openapi: 3.2.0
+info:
+  title: OwlChart Owl API
+  version: '2026-10-02'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-02: 33 operation(s) read from 2 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; OwlChart has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 12
+    documentation: 21
+    pages-with-code: 2
+    pages-read: 2
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-02'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://owlchart.com/wlfi-api.html
+  - https://owlchart.com/developers.html
+tags:
+- name: Owl
+paths:
+  /api/owl/packet/{symbol}:
+    get:
+      operationId: get_api_owl_packet_symbol
+      tags:
+      - Owl
+      summary: One signed packet containing price, band, dispersion and depth information
+      x-source: https://owlchart.com/developers.html
+      parameters:
+      - name: symbol
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: receipt
+        in: query
+        required: false
+        schema:
+          type: string
+        description: Set to 0 to get numbers without readings
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/owl/verify:
+    post:
+      operationId: post_api_owl_verify
+      tags:
+      - Owl
+      summary: Verify a packet by re‑running the arithmetic and comparing fields
+      x-source: https://owlchart.com/developers.html
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiOwlVerifyRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+components:
+  schemas:
+    PostApiOwlVerifyRequest:
+      type: object
+      properties:
+        packet:
+          type: string
+          description: Packet with its receipt to verify
+      required:
+      - packet

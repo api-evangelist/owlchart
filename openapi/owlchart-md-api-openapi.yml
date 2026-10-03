@@ -1,0 +1,98 @@
+openapi: 3.2.0
+info:
+  title: OwlChart Md API
+  version: '2026-10-02'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-02: 33 operation(s) read from 2 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; OwlChart has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 12
+    documentation: 21
+    pages-with-code: 2
+    pages-read: 2
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-02'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://owlchart.com/wlfi-api.html
+  - https://owlchart.com/developers.html
+tags:
+- name: Md
+paths:
+  /api/v1/md/ohlcv:
+    get:
+      operationId: get_api_v1_md_ohlcv
+      tags:
+      - Md
+      summary: GET /api/v1/md/ohlcv
+      x-source: https://owlchart.com/developers.html
+      parameters:
+      - name: limit
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: sym
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: tf
+        in: query
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetApiV1MdOhlcvResponse'
+      x-evidence:
+        kind: code-example
+        language: javascript
+        snippet: fetch('https://owlchart.com/api/v1/md/ohlcv?sym=crypto_perp:bybit:BTCUSDT&tf=1h&limit=300')
+components:
+  schemas:
+    GetApiV1MdOhlcvResponse:
+      type: object
+      properties:
+        sym:
+          type: string
+        class:
+          type: string
+        venue:
+          type: string
+        ticker:
+          type: string
+        tf:
+          type: string
+        k:
+          type: array
+          items:
+            type: array
+            items:
+              type: integer
+        meta:
+          type: object
+          properties:
+            price:
+              type: number
+            chg24h:
+              type: number
+            source:
+              type: string
+            delay_ms:
+              type: integer
+            sessions:
+              type: string
+            capabilities:
+              type: array
+              items:
+                type: string
+            tradingPeriod:
+              type:
+              - string
+              - 'null'

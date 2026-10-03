@@ -1,0 +1,77 @@
+openapi: 3.2.0
+info:
+  title: OwlChart Symbols API
+  version: '2026-10-02'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-02: 33 operation(s) read from 2 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; OwlChart has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 12
+    documentation: 21
+    pages-with-code: 2
+    pages-read: 2
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-02'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://owlchart.com/wlfi-api.html
+  - https://owlchart.com/developers.html
+tags:
+- name: Symbols
+paths:
+  /api/v1/symbols/search:
+    get:
+      operationId: get_api_v1_symbols_search
+      tags:
+      - Symbols
+      summary: GET /api/v1/symbols/search
+      x-source: https://owlchart.com/developers.html
+      parameters:
+      - name: class
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: limit
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: q
+        in: query
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetApiV1SymbolsSearchResponse'
+      x-evidence:
+        kind: code-example
+        language: javascript
+        snippet: fetch('https://owlchart.com/api/v1/symbols/search?q=apple&class=all&limit=5')
+components:
+  schemas:
+    GetApiV1SymbolsSearchResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        class:
+          type: string
+        venue:
+          type: string
+        ticker:
+          type: string
+        display:
+          type: string
+        sessions:
+          type: string
+        capabilities:
+          type: array
+          items:
+            type: string

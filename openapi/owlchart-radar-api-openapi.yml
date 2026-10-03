@@ -1,0 +1,34 @@
+openapi: 3.2.0
+info:
+  title: OwlChart Radar API
+  version: '2026-10-02'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-02: 33 operation(s) read from 2 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; OwlChart has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 12
+    documentation: 21
+    pages-with-code: 2
+    pages-read: 2
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-02'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://owlchart.com/wlfi-api.html
+  - https://owlchart.com/developers.html
+tags:
+- name: Radar
+paths:
+  /api/radar/watchlist:
+    get:
+      operationId: get_api_radar_watchlist
+      tags:
+      - Radar
+      summary: The launches OwlChart is tracking, with announcement details and official…
+      x-source: https://owlchart.com/developers.html
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation

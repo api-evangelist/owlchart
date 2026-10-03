@@ -1,0 +1,48 @@
+openapi: 3.2.0
+info:
+  title: OwlChart Wlfi API
+  version: '2026-10-02'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-02: 33 operation(s) read from 2 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; OwlChart has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 12
+    documentation: 21
+    pages-with-code: 2
+    pages-read: 2
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-02'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://owlchart.com/wlfi-api.html
+  - https://owlchart.com/developers.html
+tags:
+- name: Wlfi
+paths:
+  /api/wlfi/{wlfiid}:
+    get:
+      operationId: get_api_wlfi_wlfiid
+      tags:
+      - Wlfi
+      summary: GET https://owlchart.com/api/wlfi/history?days=365 risk + reporting
+      description: Provides historical WLFI data for risk and reporting.
+      x-source: https://owlchart.com/wlfi-api.html
+      parameters:
+      - name: wlfiid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: days
+        in: query
+        required: false
+        schema:
+          type: integer
+        description: Number of days of history to retrieve.
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 4 example path(s) differing only at wlfiId

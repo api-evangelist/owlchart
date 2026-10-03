@@ -69,19 +69,19 @@ common:
 
 apis:
 - name: OwlChart Market Data API
-  description: Live market data API providing OHLCV candles, real‑time order‑book data, symbol search and analytics.
+  description: >-
+    Live market data API providing OHLCV candles, real‑time order‑book data, symbol search and analytics.
   humanURL: https://owlchart.com/developers.html
   aid: owlchart:owlchart-market-data-api
-- aid: owlchart:owlchart-api
-  name: OwlChart API
-  description: 'OwlChart API as documented publicly: 33 operations. Contract generated from the documentation by API Evangelist (2026-10-02);
-
-    not the provider''s own document.'
-  humanURL: https://owlchart.com/wlfi-api.html
+- aid: owlchart:owlchart-console-api
+  name: OwlChart Console API
+  description: The Console API from OwlChart — 1 operation(s) for console.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Console
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/owlchart-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/owlchart-console-api-openapi.yml
   - type: JSONSchema
     url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
   - type: JSONSchema
@@ -94,7 +94,531 @@ apis:
     url: json-schema/owlchart-get-api-apiid-response-schema.json
   - type: JSONSchema
     url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
-
+- aid: owlchart:owlchart-cycle-api
+  name: OwlChart Cycle API
+  description: The Cycle API from OwlChart — 1 operation(s) for cycle.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Cycle
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-cycle-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-etf-api
+  name: OwlChart Etf API
+  description: The Etf API from OwlChart — 1 operation(s) for etf.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Etf
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-etf-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-exlogo-api
+  name: OwlChart Exlogo API
+  description: The Exlogo API from OwlChart — 1 operation(s) for exlogo.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Exlogo
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-exlogo-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-flow-api
+  name: OwlChart Flow API
+  description: The Flow API from OwlChart — 1 operation(s) for flow.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Flow
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-flow-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-instlogo-api
+  name: OwlChart Instlogo API
+  description: The Instlogo API from OwlChart — 1 operation(s) for instlogo.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Instlogo
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-instlogo-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-journal-api
+  name: OwlChart Journal API
+  description: The Journal API from OwlChart — 2 operation(s) for journal.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Journal
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-journal-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-key-api
+  name: OwlChart Key API
+  description: The Key API from OwlChart — 1 operation(s) for key.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Key
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-key-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-logo-api
+  name: OwlChart Logo API
+  description: The Logo API from OwlChart — 1 operation(s) for logo.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Logo
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-logo-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-markets-api
+  name: OwlChart Markets API
+  description: The Markets API from OwlChart — 1 operation(s) for markets.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Markets
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-markets-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-mcp-api
+  name: OwlChart MCP API
+  description: The Mcp API from OwlChart — 2 operation(s) for mcp.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Mcp
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-mcp-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-md-api
+  name: OwlChart Md API
+  description: The Md API from OwlChart — 1 operation(s) for md.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Md
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-md-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-oi-api
+  name: OwlChart Oi API
+  description: The Oi API from OwlChart — 1 operation(s) for oi.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Oi
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-oi-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-owl-api
+  name: OwlChart Owl API
+  description: The Owl API from OwlChart — 2 operation(s) for owl.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Owl
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-owl-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-owlcap-api
+  name: OwlChart Owlcap API
+  description: The Owlcap API from OwlChart — 1 operation(s) for owlcap.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Owlcap
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-owlcap-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-owlchart-api-api
+  name: OwlChart OwlChart API
+  description: The OwlChart API API from OwlChart — 3 operation(s) for owlchart api.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - OwlChart API
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-owlchart-api-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-owlview-api
+  name: OwlChart Owlview API
+  description: The Owlview API from OwlChart — 1 operation(s) for owlview.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Owlview
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-owlview-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-patterns-api
+  name: OwlChart Patterns API
+  description: The Patterns API from OwlChart — 3 operation(s) for patterns.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Patterns
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-patterns-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-presence-api
+  name: OwlChart Presence API
+  description: The Presence API from OwlChart — 1 operation(s) for presence.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Presence
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-presence-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-radar-api
+  name: OwlChart Radar API
+  description: The Radar API from OwlChart — 1 operation(s) for radar.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Radar
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-radar-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-record-api
+  name: OwlChart Record API
+  description: The Record API from OwlChart — 1 operation(s) for record.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Record
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-record-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-seo-api
+  name: OwlChart Seo API
+  description: The Seo API from OwlChart — 1 operation(s) for seo.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Seo
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-seo-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-symbols-api
+  name: OwlChart Symbols API
+  description: The Symbols API from OwlChart — 1 operation(s) for symbols.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Symbols
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-symbols-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-tklogo-api
+  name: OwlChart Tklogo API
+  description: The Tklogo API from OwlChart — 1 operation(s) for tklogo.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Tklogo
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-tklogo-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-usd1-api
+  name: OwlChart Usd1 API
+  description: The Usd1 API from OwlChart — 1 operation(s) for usd1.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Usd1
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-usd1-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
+- aid: owlchart:owlchart-wlfi-api
+  name: OwlChart Wlfi API
+  description: The Wlfi API from OwlChart — 1 operation(s) for wlfi.
+  humanURL: https://owlchart.com/developers.html
+  tags:
+  - Wlfi
+  properties:
+  - type: OpenAPI
+    url: openapi/owlchart-wlfi-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-md-ohlcv-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-cycle-metric-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-v1-symbols-search-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/owlchart-post-api-patterns-trainer-answer-request-schema.json
 x-submission-notes: 'Market-data API: OHLCV candles for crypto/stocks/FX/commodities, symbol search, ETF flows, pattern scanner.'
 
 x-submission-probe: root 200; developers.html 200; llms.txt 200; /api/v1/search?q=BTC 200 JSON; no OpenAPI (404); 404 probe 404

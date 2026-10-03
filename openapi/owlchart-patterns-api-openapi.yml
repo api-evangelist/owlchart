@@ -1,0 +1,85 @@
+openapi: 3.2.0
+info:
+  title: OwlChart Patterns API
+  version: '2026-10-02'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-02: 33 operation(s) read from 2 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; OwlChart has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 12
+    documentation: 21
+    pages-with-code: 2
+    pages-read: 2
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-02'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://owlchart.com/wlfi-api.html
+  - https://owlchart.com/developers.html
+tags:
+- name: Patterns
+paths:
+  /api/patterns/alerts:
+    post:
+      operationId: post_api_patterns_alerts
+      tags:
+      - Patterns
+      summary: 'Members: GET/POST /api/patterns/alerts with the bearer token'
+      x-source: https://owlchart.com/developers.html
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/patterns/trainer/answer:
+    post:
+      operationId: post_api_patterns_trainer_answer
+      tags:
+      - Patterns
+      summary: 'POST /api/patterns/trainer/answer {token, answer: UP|DOWN|SKIP} (points and the…'
+      x-source: https://owlchart.com/developers.html
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiPatternsTrainerAnswerRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/patterns/trainer/{trainerid}:
+    get:
+      operationId: get_api_patterns_trainer_trainerid
+      tags:
+      - Patterns
+      summary: GET /api/patterns/trainer/board (today and all time)
+      x-source: https://owlchart.com/developers.html
+      parameters:
+      - name: trainerid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at trainerId
+components:
+  schemas:
+    PostApiPatternsTrainerAnswerRequest:
+      type: object
+      properties:
+        token:
+          type: string
+          description: Authentication token for the trainer session
+        answer:
+          type: string
+          description: One of UP, DOWN, SKIP
+      required:
+      - token
+      - answer
