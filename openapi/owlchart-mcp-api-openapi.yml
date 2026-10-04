@@ -67,16 +67,18 @@ paths:
         kind: documentation
 components:
   schemas:
-    PostMcpResponse:
+    GetApiMcpMcpidResponse:
       type: object
       properties:
-        jsonrpc:
+        url:
           type: string
-        id:
-          type: integer
-        result:
-          type: object
-        error:
+        transport:
+          type: string
+        access:
+          type: string
+        tools:
+          type: array
+        usage:
           type: object
     PostMcpRequest:
       type: object
@@ -93,16 +95,14 @@ components:
       - jsonrpc
       - id
       - method
-    GetApiMcpMcpidResponse:
+    PostMcpResponse:
       type: object
       properties:
-        url:
+        jsonrpc:
           type: string
-        transport:
-          type: string
-        access:
-          type: string
-        tools:
-          type: array
-        usage:
+        id:
+          type: integer
+        result:
+          type: object
+        error:
           type: object

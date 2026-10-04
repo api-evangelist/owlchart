@@ -112,23 +112,6 @@ paths:
         collapsed_from: 5 example path(s) differing only at apiId
 components:
   schemas:
-    GetApiApiidResponse:
-      type: object
-      properties:
-        enabled:
-          type: boolean
-        bybitCode:
-          type: string
-        proPage:
-          type: string
-        proAgent:
-          type: string
-        proIndicators:
-          type: array
-        proTools:
-          type: array
-        message:
-          type: string
     GetApiV1V1IdResponse:
       type: object
       properties:
@@ -174,3 +157,20 @@ components:
               type: string
             attribution:
               type: string
+    GetApiApiidResponse:
+      type: object
+      properties:
+        enabled:
+          type: boolean
+        bybitCode:
+          type: string
+        proPage:
+          type: string
+        proAgent:
+          type: string
+        proIndicators:
+          type: array
+        proTools:
+          type: array
+        message:
+          type: string

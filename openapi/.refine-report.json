@@ -94,7 +94,34 @@
     "owlchart-openapi-generated.yml: declared missing tag: Tklogo",
     "owlchart-openapi-generated.yml: declared missing tag: Usd1",
     "owlchart-openapi-generated.yml: declared missing tag: Wlfi",
-    "apis.yml register: written (+26 apis, 27 total)"
+    "apis.yml register: already-registered"
   ],
-  "skipped": []
+  "skipped": [
+    "owlchart-console-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-cycle-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-etf-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-exlogo-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-flow-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-instlogo-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-journal-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-key-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-logo-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-markets-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-mcp-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-md-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-oi-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-owl-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-owlcap-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-owlchart-api-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-owlview-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-patterns-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-presence-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-radar-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-record-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-seo-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-symbols-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-tklogo-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-usd1-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "owlchart-wlfi-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

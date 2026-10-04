@@ -51,6 +51,11 @@ paths:
         kind: documentation
 components:
   schemas:
+    PostApiOwlviewStateResponse:
+      type: object
+      properties:
+        state:
+          type: object
     PostApiOwlviewStateRequest:
       type: object
       properties:
@@ -59,8 +64,3 @@ components:
           description: Chart state JSON (drawings, alerts, etc.).
       required:
       - state
-    PostApiOwlviewStateResponse:
-      type: object
-      properties:
-        state:
-          type: object
