@@ -120,6 +120,8 @@ apis:
   description: The Etf API from OwlChart — 1 operation(s) for etf.
   humanURL: https://owlchart.com/developers.html
   tags:
+  - ETFs
+  tags_raw:
   - Etf
   properties:
   - type: OpenAPI
@@ -204,6 +206,8 @@ apis:
   description: The Journal API from OwlChart — 2 operation(s) for journal.
   humanURL: https://owlchart.com/developers.html
   tags:
+  - Journals
+  tags_raw:
   - Journal
   properties:
   - type: OpenAPI
@@ -288,6 +292,8 @@ apis:
   description: The Mcp API from OwlChart — 2 operation(s) for mcp.
   humanURL: https://owlchart.com/developers.html
   tags:
+  - MCP
+  tags_raw:
   - Mcp
   properties:
   - type: OpenAPI
@@ -351,6 +357,8 @@ apis:
   description: The Owl API from OwlChart — 2 operation(s) for owl.
   humanURL: https://owlchart.com/developers.html
   tags:
+  - OWL
+  tags_raw:
   - Owl
   properties:
   - type: OpenAPI
@@ -519,6 +527,8 @@ apis:
   description: The Seo API from OwlChart — 1 operation(s) for seo.
   humanURL: https://owlchart.com/developers.html
   tags:
+  - SEO
+  tags_raw:
   - Seo
   properties:
   - type: OpenAPI
