@@ -21,7 +21,7 @@ specificationVersion: '0.20'
 
 created: '2026-10-02'
 
-modified: '2026-10-02'
+modified: '2026-10-06'
 
 tags:
 - Finance
@@ -38,6 +38,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- url: https://owlchart.com/feed.xml
+  type: BlogRSS
 - type: Spectral
   url: rules/owlchart-rules.yml
 - type: JSONLD
