@@ -1,0 +1,14 @@
+{
+  "repo": "owlchart",
+  "feeds": [
+    {
+      "source": "https://owlchart.com/feed.xml",
+      "feed_url": "https://owlchart.com/feed.xml",
+      "title": "",
+      "saved": 10,
+      "method": "feed"
+    }
+  ],
+  "post_count": 10,
+  "fetched": "2026-10-10T13:15:00Z"
+}
